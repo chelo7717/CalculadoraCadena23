@@ -4,6 +4,6 @@ describe("Calculadora de Cadenas", () => {
       expect(calculadoradeCadenas("")).toEqual(0);
     });
     it("deberia devolver caadena vacia", () => {
-        expect(calculadoradeCadenas("1")).toEqual(0);
+        expect(calculadoradeCadenas("1")).toEqual(1);
       });
   });
