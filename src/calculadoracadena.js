@@ -1,14 +1,15 @@
 function calculadoradeCadenas(cadena){
     let numerosseparados = cadena.split(",")
+    var sum=0;
     if(cadena == ""){
         return 0;
     }else{
     if(numerosseparados.length==1){
         return parseInt(cadena);
     }else{
-        let num1 = parseInt(numerosseparados[0])
-        let num2 = parseInt(numerosseparados[1])
-        var sum = num1 + num2
+        for(var i = 0;i<numerosseparados.length;i++){
+            sum += parseInt(numerosseparados[i]);
+        }
     }
     } 
     return sum;
