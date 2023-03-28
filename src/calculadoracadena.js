@@ -1,5 +1,6 @@
 function calculadoradeCadenas(cadena){
-    let numerosseparados = cadena.split(",")
+    var separadores = /[,-]/;
+    let numerosseparados = cadena.split(separadores)
     var sum=0;
     if(cadena == ""){
         return 0;
